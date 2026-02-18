@@ -2,8 +2,7 @@
  * Pi Aliases Extension
  *
  * Adds familiar command aliases:
- *   /clear → /new   (start a new session)
- *   /quit  → /exit  (exit pi)
+ *   /clear → /new  (start a new session)
  *
  * Install:
  *   pi install npm:pi-aliases
@@ -23,11 +22,4 @@ export default function (pi: ExtensionAPI) {
     },
   });
 
-  // /quit → /exit (exit pi)
-  pi.registerCommand("quit", {
-    description: "Exit pi (alias for /exit)",
-    handler: async (_args, ctx) => {
-      ctx.shutdown();
-    },
-  });
 }

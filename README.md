@@ -5,7 +5,8 @@ A [pi](https://github.com/badlogic/pi-mono) extension that adds familiar command
 | Alias    | Maps to | Description                          |
 |----------|---------|--------------------------------------|
 | `/clear` | `/new`  | Clear conversation, start new session |
-| `/quit`  | `/exit` | Exit pi                              |
+
+> `/quit` is already built-in in pi — no alias needed.
 
 ## Install
 
