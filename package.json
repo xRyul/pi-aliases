@@ -1,0 +1,23 @@
+{
+  "name": "pi-aliases",
+  "version": "1.0.0",
+  "description": "Pi extension that adds command aliases: /clear → /new, /quit → /exit",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "author": "xRyul",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xRyul/pi-aliases.git"
+  },
+  "homepage": "https://github.com/xRyul/pi-aliases#readme",
+  "bugs": {
+    "url": "https://github.com/xRyul/pi-aliases/issues"
+  },
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  }
+}
