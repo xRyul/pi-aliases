@@ -1,6 +1,6 @@
 {
   "name": "pi-aliases",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pi extension that adds command aliases: /clear → /new, /exit → /quit",
   "type": "module",
   "keywords": [
