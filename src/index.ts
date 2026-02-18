@@ -1,25 +1,30 @@
 /**
  * Pi Aliases Extension
  *
- * Adds familiar command aliases:
+ * Silently redirects command aliases via input interception:
  *   /clear → /new  (start a new session)
+ *   /exit  → /quit (exit pi)
+ *
+ * These don't appear in autocomplete — they just work when typed.
  *
  * Install:
  *   pi install npm:pi-aliases
  *   pi install git:github.com/xRyul/pi-aliases
- *
- * Or symlink to ~/.pi/agent/extensions/pi-aliases
  */
 
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 
-export default function (pi: ExtensionAPI) {
-  // /clear → /new (start a new session)
-  pi.registerCommand("clear", {
-    description: "Clear conversation and start a new session (alias for /new)",
-    handler: async (_args, ctx) => {
-      await ctx.newSession();
-    },
-  });
+const aliases: Record<string, string> = {
+  "/clear": "/new",
+  "/exit": "/quit",
+};
 
+export default function (pi: ExtensionAPI) {
+  pi.on("input", async (event, _ctx) => {
+    const target = aliases[event.text.trim()];
+    if (target) {
+      return { action: "transform", text: target };
+    }
+    return { action: "continue" };
+  });
 }

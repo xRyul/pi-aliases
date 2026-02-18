@@ -1,7 +1,7 @@
 {
   "name": "pi-aliases",
-  "version": "1.0.1",
-  "description": "Pi extension that adds command aliases: /clear → /new",
+  "version": "1.0.2",
+  "description": "Pi extension that adds command aliases: /clear → /new, /exit → /quit",
   "type": "module",
   "keywords": [
     "pi-package"
