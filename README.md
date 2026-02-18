@@ -1,8 +1,8 @@
 # pi-aliases
 
-A [pi](https://github.com/badlogic/pi-mono) extension that adds familiar command aliases via silent input redirection — no extra entries in autocomplete.
+A [pi](https://github.com/badlogic/pi-mono) extension that adds familiar command aliases. They show in autocomplete with a hint indicating the built-in command they map to.
 
-| You type | Runs   | Description                          |
+| Alias    | Runs   | Description                          |
 |----------|--------|--------------------------------------|
 | `/clear` | `/new` | Clear conversation, start new session |
 | `/exit`  | `/quit`| Exit pi                              |
