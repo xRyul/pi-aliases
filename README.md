@@ -1,6 +1,6 @@
 # pi-aliases
 
-A [pi](https://github.com/badlogic/pi-mono) extension that adds familiar command aliases. They show in autocomplete with a hint indicating the built-in command they map to.
+A [pi](https://github.com/earendil-works/pi-mono) extension that adds familiar command aliases. They show in autocomplete with a hint indicating the built-in command they map to.
 
 | Alias    | Runs   | Description                          |
 |----------|--------|--------------------------------------|
